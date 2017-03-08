@@ -1,3 +1,5 @@
+var $fh = require('fh-mbaas-api');
+
 function setupApiAi() {
     console.log("Setting up Api.ai intent and Entities");
     //Get a list of forms associated with the project.
