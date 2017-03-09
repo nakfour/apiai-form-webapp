@@ -10,10 +10,11 @@ function setupApiAi() {
 
 var params = {};
 $fh.forms.init(params, function(err) {
-  if (err) console.error(err);
+  if (err){
 
   // Forms initialised ok if no error
   console.log("Error init forms");
+  }
   else {
   console.log("Init forms success");
   }
