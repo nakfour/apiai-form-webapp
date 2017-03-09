@@ -8,20 +8,16 @@ function setupApiAi() {
 
     };
 
-$fh.cloud(
-      {
-        path: 'hello',
-        data: {
-          hello: "hello"
-        }
-      },
-      function (res) {
-        //document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
-      },
-      function (code, errorprops, params) {
-        alert('An error occured: ' + code + ' : ' + errorprops);
-      }
-  );
+var params = {};
+$fh.forms.init(params, function(err) {
+  if (err) console.error(err);
+
+  // Forms initialised ok if no error
+  console.log("Error init forms");
+  else {
+  console.log("Init forms success");
+  }
+});
     //$fh.forms.getForms(options,
 
     /*
