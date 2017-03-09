@@ -8,16 +8,30 @@ function setupApiAi() {
 
     };
 
-    $fh.forms.getForms(options,
+$fh.cloud(
+      {
+        path: 'hello',
+        data: {
+          hello: "hello"
+        }
+      },
+      function (res) {
+        //document.getElementById('cloudResponse').innerHTML = "<p>" + res.msg + "</p>";
+      },
+      function (code, errorprops, params) {
+        alert('An error occured: ' + code + ' : ' + errorprops);
+      }
+  );
+    //$fh.forms.getForms(options,
 
     /*
     * Function executed with forms.
     */
-    function (err, response) {
+    /*function (err, response) {
       if (err) console.log("Error: " + err);
 
       //An Array Of Forms Associated With The Project
-      var formsArray = response.forms;
+      var formsArray = response.forms;*/
 
        /*
          exampleForm: {
@@ -27,8 +41,8 @@ function setupApiAi() {
           lastUpdatedTimestamp: <<Timestamp of when the form was last updated>>
         }
       */
-      var exampleForm = forms[0];
+      /*var exampleForm = forms[0];
       console.log(exampleForm.name)
       //return callback(undefined, formsArray);
-    });
+    });*/
 }
