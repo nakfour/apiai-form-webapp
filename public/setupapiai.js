@@ -9,7 +9,7 @@ function setupApiAi() {
     };
 
 var params = {};
-$fh.forms.init(params, function(err) {
+/*$fh.forms.init(params, function(err) {
   if (err){
 
   // Forms initialised ok if no error
@@ -18,7 +18,30 @@ $fh.forms.init(params, function(err) {
   else {
   console.log("Init forms success");
   }
-});
+});*/
+
+$fh.cloud(
+      {
+        path: '/hello',
+        method: "GET",
+        contentType: "application/json",
+       /* data: {
+          hello: document.getElementById('hello_to').value
+        }*/
+      },
+      function (res) {
+         /* var allOpps=JSON.parse(res);
+          var count=allOpps.length;
+          var oppDescr=allOpps [0].Description;
+        document.getElementById('cloudResponse').innerHTML = "<p>" + oppDescr + "</p>";*/
+        console.log("GET Success");
+      },
+      function (code, errorprops, params) {
+        alert('An error occured: ' + code + ' : ' + errorprops);
+      }
+  );
+
+
     //$fh.forms.getForms(options,
 
     /*
