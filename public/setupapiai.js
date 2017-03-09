@@ -1,5 +1,4 @@
-var $fh = require('fh-mbaas-api');
-var $fh = require('fh-js-sdk');
+
 
 function setupApiAi() {
     console.log("Setting up Api.ai intent and Entities");
