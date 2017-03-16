@@ -2,6 +2,8 @@
 
 function setupApiAi() {
     console.log("Setting up Api.ai intent and Entities");
+    // Change Image to Red Button
+    document.getElementById("startButton").src == "img/Power-red.png";
     //Get a list of forms associated with the project.
     var options = {
 

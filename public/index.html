@@ -8,8 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="main.js"></script>
     <script src="setupapiai.js"></script>
+    <style>
+      body {
+        background: url("img/nuerburgring.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      IMG.displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        }
+    </style>
   </head>
   <body>
   <button onclick="setupApiAi()">Start ApiAi Setup</button>
+  <img class="displayed" src="img/Power-green.png" alt="start" onclick="setupApiAi()" height="200" width="200" id="startButton"/>
   </body>
 </html>
