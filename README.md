@@ -1,20 +1,7 @@
-fh-advanced-webapp-blank-app
-============================
-Author: Erik Jan de Wit   
-Level: Intermediate   
-Technologies: Javascript, RHMAP   
-Summary: An advanced web application template to use with RHMAP.   
-Community Project: [FeedHenry](http://feedhenry.org)   
-Target Product: RHMAP   
-Product Versions: RHMAP 3.8.0+   
-Source: https://github.com/feedhenry/fh-advanced-webapp-blank-app 
-Prerequisites: fh-js-sdk : 2.14.+ 
+
 
 ## What is it?
-
-This application is an advanced web application template. It should be used in combination with the [HelloWorld cloud app](https://github.com/feedhenry-templates/helloworld-cloud). Refer to [fhconfig.json](www/fhconfig.json) for configuration.
-
-If you do not have access to a RHMAP instance, you can sign up for a free instance at [https://openshift.feedhenry.com/](https://openshift.feedhenry.com/).
+This is the web application that calls the cloudApp to start api.ai setup
 
 ## How do I run it?  
 
